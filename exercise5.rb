@@ -1,6 +1,9 @@
-puts "Please provide the temperature in Fahrenheit?"
-temperature = gets.chomp.to_i 
+def celsius(fahrenheit) 
+	(fahrenheit - 32) * 5/9
+end
 
-celsius = (temperature - 32) * 5/9
-puts "The temperature in Celsius is #{celsius}"
+puts "Please provide the temperature in Fahrenheit?"
+fahrenheit = gets.chomp.to_i
+result = celsius(fahrenheit)
+puts "The temperature in Celsius is #{result}"
 
