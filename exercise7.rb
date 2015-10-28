@@ -33,12 +33,13 @@ list = display_cohort(students)
 puts list
 
 #BONUS
-def total_students(sum)
-	sum.each do |name, number|
-	puts "#{number}" 
- end
+total = 0 
+students.each do |key, value|
+	total += value
+	end 
+puts total
 
-end
+
 
 
 
