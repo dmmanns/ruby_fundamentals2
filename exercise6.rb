@@ -6,10 +6,7 @@ end
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
 add_item(grocery_list, "rice")
-grocery_list.each_with_index do |item, index|
-	grocery_list [index] = "*#{item}"
 
-end
 
 puts grocery_list.sort
 puts "There are #{grocery_list.count} items to be picked up today"
@@ -20,8 +17,16 @@ if grocery_list.include?("looking_for")
 else puts "You need to pick-up #{looking_for}"
 
 end
-
-grocery_list.pop
-
 puts grocery_list[1]
 
+
+puts "********"
+puts grocery_list.delete("*salmon")
+puts "********"
+
+puts grocery_list
+
+grocery_list.each_with_index do |item, index|
+	grocery_list [index] = "*#{item}"
+	end
+	

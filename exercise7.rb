@@ -1,5 +1,10 @@
-def  display_cohort(name, number_)
-	puts students 
+#number1
+
+def  display_cohort(list)
+	list.each do |name, number|
+		puts "#{name}: #{number} students"
+	end
+
 end
 
 students = {
@@ -8,5 +13,16 @@ students = {
 	:cohort3 => 22
 }
 
-puts students
+#number2
+students[:cohort4] = 43
+list = display_cohort(students)
+
+
+#number3
+puts list.keys
+
+
+
+
+
 
